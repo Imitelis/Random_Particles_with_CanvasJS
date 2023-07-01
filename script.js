@@ -65,18 +65,18 @@ class init {
   constructor() {
     this.animate = this.animate.bind(this);
     this.particles = [];
-    this.particleCount = Math.floor(canvas.width / 3.75);
+    this.particleCount = Math.floor((canvas.width + canvas.height) / 1.75);
 
-	this.resize();
+    this.resize();
     this.animate();
   }
 
   resize() {
     canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
+    canvas.height = window.innerHeight;
 	
-	ctx.fillStyle = "#222";
-	ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#222";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
 
   animate() {
