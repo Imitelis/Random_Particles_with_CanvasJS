@@ -65,7 +65,7 @@ class init {
   constructor() {
     this.animate = this.animate.bind(this);
     this.particles = [];
-    this.particleCount = Math.floor((canvas.width + canvas.height) / 1.75);
+    this.particleCount = Math.floor((canvas.width + canvas.height) * 0.25);
 
     this.resize();
     this.animate();
