@@ -24,7 +24,7 @@ class Particle {
 		this.angle = Math.random() * 360;
 		this.speed = 9.5;
 		this.blur = Math.random() * 7.5;
-		this.style = "hsla(265, 100%, 50%, 1)";
+		this.style = "hsla(215, 100%, 50%, 1)";
 	}
 
 	draw() {
